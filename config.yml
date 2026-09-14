@@ -1,0 +1,139 @@
+feed:
+  title: "Orkdal sjukehus – redaksjonell overvåking"
+  description: "Automatisk overvåking av offentlige kilder om Orkdal sjukehus. Treff må verifiseres journalistisk."
+  site_url: "https://www.stolav.no/orkdal"
+  feed_path: "docs/orkdal-sjukehus.xml"
+  max_items: 250
+  initial_items_per_source: 8
+
+monitor:
+  user_agent: "Avisa-ST-Orkdal-monitor/1.0 (+redaksjonell kildeovervaking)"
+  timeout_seconds: 30
+  max_document_mb: 15
+  max_candidates_per_source: 80
+
+keywords:
+  - "Orkdal sjukehus"
+  - "Orkdal sykehus"
+  - "St. Olavs hospital Orkdal"
+  - "St Olavs hospital Orkdal"
+  - "Medisinsk avdeling Orkdal"
+  - "Orkdal medisin"
+  - "Kirurgisk avdeling Orkdal"
+  - "Avdeling Orkdal"
+  - "Felles mottaksavdeling Orkdal"
+  - "KOVA Orkdal"
+  - "Røntgen Orkdal"
+  - "Orkdal DPS"
+  - "Nidelv DPS Orkdal"
+  - "BUP Orkanger"
+  - "Sjukehusvegen 3"
+  - "Sjukehusvegen 5"
+  - "Legevakten i Orkdalsregionen"
+  - "Legevakten i Orkdals-regionen"
+  - "Orkdalsregionen legevakt"
+  - "LiO Orkland"
+
+# html_links leser lenkelister og kan tekstsøke PDF/DOCX. google_news brukes som
+# reserve for JavaScript-sider og tjenester som krever egen API-avtale.
+sources:
+  - id: stolav_news
+    name: "St. Olavs hospital – nyheter"
+    type: html_links
+    url: "https://www.stolav.no/nyheter/"
+    link_patterns: ["/nyheter/"]
+    fetch_content: true
+    fallback_query: 'site:stolav.no/nyheter ("Orkdal sjukehus" OR "Orkdal DPS" OR "BUP Orkanger")'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger", "KOVA Orkdal"]
+
+  - id: stolav_board
+    name: "St. Olavs hospital – styrepapirer"
+    type: html_links
+    url: "https://styreportal.helse-midt.no/1001/SitePages/Saksdokumenter.aspx?web=1"
+    link_patterns: ["Delte.*dokumenter", "\\.pdf(?:$|\\?)", "\\.docx?(?:$|\\?)"]
+    fetch_content: true
+    fallback_query: 'site:styreportal.helse-midt.no/1001 (Orkdal OR Orkanger)'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger", "KOVA Orkdal"]
+
+  - id: hmn_news
+    name: "Helse Midt-Norge – nyheter"
+    type: html_links
+    url: "https://www.helse-midt.no/nyheter"
+    link_patterns: ["/nyheter/"]
+    fetch_content: true
+    fallback_query: 'site:helse-midt.no/nyheter ("Orkdal sjukehus" OR "St. Olavs hospital Orkdal")'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: hmn_board
+    name: "Helse Midt-Norge – styrepapirer"
+    type: html_links
+    url: "https://www.helse-midt.no/Om-oss/Styret/"
+    link_patterns: ["styreportal", "Delte.*dokumenter", "\\.pdf(?:$|\\?)"]
+    fetch_content: true
+    fallback_query: 'site:styreportal.helse-midt.no ("Orkdal sjukehus" OR "Orkdal DPS")'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: hmn_postjournal
+    name: "Helse Midt-Norge – offentlig postjournal"
+    type: html_links
+    url: "https://www.helse-midt.no/om-oss/offentlig-postjournal/"
+    link_patterns: ["postjournal", "\\.pdf(?:$|\\?)"]
+    fetch_content: true
+    fallback_query: 'site:helse-midt.no/ siteassets postjournal (Orkdal OR Orkanger)'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: tilsyn_helsetilsynet
+    name: "Helsetilsynet – tilsyn"
+    type: google_news
+    query: 'site:helsetilsynet.no ("Orkdal sjukehus" OR "Orkdal DPS" OR "BUP Orkanger")'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: tilsyn_statsforvalteren
+    name: "Statsforvalteren i Trøndelag – tilsyn og vedtak"
+    type: google_news
+    query: 'site:statsforvalteren.no/trondelag ("Orkdal sjukehus" OR "Orkdal DPS" OR "St. Olavs hospital")'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: ukom
+    name: "Ukom – undersøkelser om pasientsikkerhet"
+    type: google_news
+    query: 'site:ukom.no (Orkdal OR "St. Olavs hospital")'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: jobs
+    name: "Arbeidsplassen og Webcruiter – stillinger"
+    type: google_news
+    query: '(site:arbeidsplassen.nav.no OR site:webcruiter.com) ("Orkdal sjukehus" OR "KOVA Orkdal" OR "Orkdal DPS")'
+    result_terms: ["Orkdal sjukehus", "Orkdal sykehus", "Orkdal DPS", "Nidelv DPS", "BUP Orkanger", "KOVA Orkdal"]
+
+  - id: doffin
+    name: "Doffin – anskaffelser"
+    type: google_news
+    query: 'site:doffin.no ("Orkdal sjukehus" OR "Orkdal sykehus")'
+    result_terms: ["Orkdal sjukehus", "Orkdal sykehus"]
+
+  - id: waiting_times
+    name: "Helsenorge – ventetider/behandlingssted"
+    type: google_news
+    query: 'site:tjenester.helsenorge.no/velg-behandlingssted ("Orkdal sjukehus" OR Orkanger)'
+    result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
+
+  - id: quality_indicators
+    name: "Helsedirektoratet – kvalitetsindikatorer"
+    type: page_snapshot
+    url: "https://www.helsedirektoratet.no/statistikk/kvalitetsindikatorer/NKI-dashbord-oversikt-og-navigering"
+    require_keyword: false
+    alert_on_first: false
+
+  - id: npe
+    name: "Norsk pasientskadeerstatning – statistikk"
+    type: page_snapshot
+    url: "https://www.npe.no/no/Helsepersonell/statistikk/statistikkportal/"
+    require_keyword: false
+    alert_on_first: false
+
+  - id: lio_orkland
+    name: "Orkland kommune – legevakt og samhandling"
+    type: google_news
+    query: 'site:orkland.kommune.no ("Orkdal sjukehus" OR "Legevakten i Orkdalsregionen" OR "LiO")'
+    result_terms: ["Orkdal sjukehus", "Orkdal sykehus", Legevakten, Orkdalsregionen, "lege i observasjon", LiO]
