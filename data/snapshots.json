@@ -1,11 +1,11 @@
 {
   "npe": {
-    "checked": "2026-09-15T01:31:18+00:00",
+    "checked": "2026-09-15T02:31:26+00:00",
     "hash": "a322f79781f96c7397d2565516d269697059efb34744e14a4e9d4ac1f15c9da8",
     "url": "https://www.npe.no/no/Helsepersonell/statistikk/statistikkportal/"
   },
   "quality_indicators": {
-    "checked": "2026-09-15T01:31:17+00:00",
+    "checked": "2026-09-15T02:31:25+00:00",
     "hash": "57cb23db21112f85e786094d01314d11948af84012acb5a95a4043987f5208e3",
     "url": "https://www.helsedirektoratet.no/statistikk/kvalitetsindikatorer/NKI-dashbord-oversikt-og-navigering"
   }
