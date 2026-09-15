@@ -118,13 +118,6 @@ sources:
     query: 'site:tjenester.helsenorge.no/velg-behandlingssted ("Orkdal sjukehus" OR Orkanger)'
     result_terms: [Orkdal, Orkanger, "Nidelv DPS", "BUP Orkanger"]
 
-  - id: quality_indicators
-    name: "Helsedirektoratet – kvalitetsindikatorer"
-    type: page_snapshot
-    url: "https://www.helsedirektoratet.no/statistikk/kvalitetsindikatorer/NKI-dashbord-oversikt-og-navigering"
-    require_keyword: false
-    alert_on_first: false
-
   - id: npe
     name: "Norsk pasientskadeerstatning – statistikk"
     type: page_snapshot
