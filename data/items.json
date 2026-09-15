@@ -1,5 +1,18 @@
 [
   {
+    "discovered": "2026-09-15T06:36:47+00:00",
+    "id": "78edc1c5d5f381cacb3c8057abc4f589",
+    "matched_terms": [
+      "endringskontroll"
+    ],
+    "published": "2026-09-15T06:36:47+00:00",
+    "source": "Helsedirektoratet – kvalitetsindikatorer",
+    "source_id": "quality_indicators",
+    "summary": "Dashbord - Se alle indikatorer for din kommune eller ditt sykehus - Helsedirektoratet GÃ¥ til hovedinnhold Forsiden Statistikk Nasjonale kvalitetsindikatorer Dashbord - Se alle indikatorer for din kommune eller ditt sykehus Her fÃ¥r du et raskt overblikk over alle de nasjonale kvalitetsindikatorene. Hensikten med dashbordet er Ã¥ se flere indikatorer for Ã©n spesifikk geografisk lokasjon eller behandlingsenhet i sammenheng. Det er mulig Ã¥ filtrere indikatorer basert pÃ¥ tjenesteomrÃ¥de eller tema. Du kan ogsÃ¥ starte med fÃ¸rst Ã¥ velge lokasjonen du vil se pÃ¥, f.eks. en kommune eller et helseforetak. Det er ogsÃ¥ mulig Ã¥ se utviklingen som en grafikk for opptil tre indikatorer av gangen ",
+    "title": "Kilden er endret: Dashbord - Se alle indikatorer for din kommune eller ditt sykehus",
+    "url": "https://www.helsedirektoratet.no/statistikk/kvalitetsindikatorer/NKI-dashbord-oversikt-og-navigering"
+  },
+  {
     "discovered": "2026-09-14T14:41:04+00:00",
     "id": "aa275ddac43812a2f61ea366d59452e4",
     "matched_terms": [
