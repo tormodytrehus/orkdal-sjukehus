@@ -1,109 +1,109 @@
 {
-  "checked": "2026-09-18T10:28:42+00:00",
+  "checked": "2026-09-18T11:27:24+00:00",
   "sources": [
     {
-      "checked": "2026-09-18T10:28:34+00:00",
+      "checked": "2026-09-18T11:27:16+00:00",
       "id": "stolav_news",
       "items": 5,
       "name": "St. Olavs hospital – nyheter",
       "ok": true,
-      "seconds": 10.05
+      "seconds": 3.19
     },
     {
-      "checked": "2026-09-18T10:28:36+00:00",
+      "checked": "2026-09-18T11:27:18+00:00",
       "id": "stolav_board",
       "items": 0,
       "name": "St. Olavs hospital – styrepapirer",
       "ok": true,
-      "seconds": 2.17
+      "seconds": 1.86
     },
     {
-      "checked": "2026-09-18T10:28:36+00:00",
+      "checked": "2026-09-18T11:27:19+00:00",
       "id": "hmn_news",
       "items": 0,
       "name": "Helse Midt-Norge – nyheter",
       "ok": true,
-      "seconds": 0.75
+      "seconds": 0.74
     },
     {
-      "checked": "2026-09-18T10:28:38+00:00",
+      "checked": "2026-09-18T11:27:21+00:00",
       "id": "hmn_board",
       "items": 0,
       "name": "Helse Midt-Norge – styrepapirer",
       "ok": true,
-      "seconds": 1.84
+      "seconds": 1.8
     },
     {
-      "checked": "2026-09-18T10:28:39+00:00",
+      "checked": "2026-09-18T11:27:21+00:00",
       "id": "hmn_postjournal",
       "items": 0,
       "name": "Helse Midt-Norge – offentlig postjournal",
       "ok": true,
-      "seconds": 0.87
+      "seconds": 0.83
     },
     {
-      "checked": "2026-09-18T10:28:39+00:00",
+      "checked": "2026-09-18T11:27:22+00:00",
       "id": "tilsyn_helsetilsynet",
       "items": 1,
       "name": "Helsetilsynet – tilsyn",
       "ok": true,
-      "seconds": 0.28
+      "seconds": 0.18
     },
     {
-      "checked": "2026-09-18T10:28:40+00:00",
+      "checked": "2026-09-18T11:27:22+00:00",
       "id": "tilsyn_statsforvalteren",
       "items": 0,
       "name": "Statsforvalteren i Trøndelag – tilsyn og vedtak",
       "ok": true,
-      "seconds": 0.27
+      "seconds": 0.3
     },
     {
-      "checked": "2026-09-18T10:28:40+00:00",
+      "checked": "2026-09-18T11:27:22+00:00",
       "id": "ukom",
       "items": 0,
       "name": "Ukom – undersøkelser om pasientsikkerhet",
       "ok": true,
-      "seconds": 0.27
+      "seconds": 0.2
     },
     {
-      "checked": "2026-09-18T10:28:40+00:00",
+      "checked": "2026-09-18T11:27:22+00:00",
       "id": "jobs",
       "items": 0,
       "name": "Arbeidsplassen og Webcruiter – stillinger",
       "ok": true,
-      "seconds": 0.26
+      "seconds": 0.22
     },
     {
-      "checked": "2026-09-18T10:28:40+00:00",
+      "checked": "2026-09-18T11:27:23+00:00",
       "id": "doffin",
       "items": 0,
       "name": "Doffin – anskaffelser",
       "ok": true,
-      "seconds": 0.27
+      "seconds": 0.23
     },
     {
-      "checked": "2026-09-18T10:28:41+00:00",
+      "checked": "2026-09-18T11:27:23+00:00",
       "id": "waiting_times",
       "items": 0,
       "name": "Helsenorge – ventetider/behandlingssted",
       "ok": true,
-      "seconds": 0.29
+      "seconds": 0.18
     },
     {
-      "checked": "2026-09-18T10:28:42+00:00",
+      "checked": "2026-09-18T11:27:24+00:00",
       "id": "npe",
       "items": 0,
       "name": "Norsk pasientskadeerstatning – statistikk",
       "ok": true,
-      "seconds": 0.77
+      "seconds": 1.04
     },
     {
-      "checked": "2026-09-18T10:28:42+00:00",
+      "checked": "2026-09-18T11:27:24+00:00",
       "id": "lio_orkland",
       "items": 3,
       "name": "Orkland kommune – legevakt og samhandling",
       "ok": true,
-      "seconds": 0.27
+      "seconds": 0.21
     }
   ]
 }
